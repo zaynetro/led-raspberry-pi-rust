@@ -1,0 +1,9 @@
+[package]
+name = "led"
+version = "0.1.0"
+authors = ["Roman Zaynetdinov <romanznet@gmail.com>"]
+
+[dependencies]
+#sysfs_gpio = "0.4"
+sysfs_gpio = { git = "https://github.com/zaynetro/rust-sysfs-gpio", rev = "2e2efd5cf5935ce4a42130b439c53f9d79027108" }
+
