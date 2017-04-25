@@ -15,7 +15,12 @@ fn main() {
 fn blink<L: LED>(mut led: L, times: i32) -> L {
     // Could be that we need to wait for a bit on Raspberry Pi
     sleep(Duration::from_millis(200));
-    // TODO: Fix this method to make tests successfull
+    for _ in 0..times {
+        let _ = led.on();
+        sleep(Duration::from_millis(200));
+        let _ = led.off();
+        sleep(Duration::from_millis(200));
+    }
     led
 }
 
