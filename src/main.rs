@@ -8,7 +8,7 @@ use std::time::Duration;
 use led::{LED, LEDImpl};
 
 fn main() {
-    let led = LEDImpl::new(147);
+    let led = LEDImpl::new(17);
     blink(led, 50);
 }
 
